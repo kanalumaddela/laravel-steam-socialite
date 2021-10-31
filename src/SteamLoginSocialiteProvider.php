@@ -8,7 +8,6 @@ use Symfony\Component\Routing\Exception\RouteNotFoundException;
 
 class SteamLoginSocialiteProvider extends AbstractProvider
 {
-
     public const IDENTIFIER = 'STEAM';
 
     /**
@@ -49,7 +48,6 @@ class SteamLoginSocialiteProvider extends AbstractProvider
         }
 
         if ($this->steamLogin->validated()) {
-
         }
     }
 
@@ -98,7 +96,6 @@ class SteamLoginSocialiteProvider extends AbstractProvider
         } catch (RouteNotFoundException $e) {
             $redirectUrl = $url->to($redirectUrl);
         }
-
 
         return $redirectUrl;
     }
