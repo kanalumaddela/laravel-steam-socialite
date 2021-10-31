@@ -1,0 +1,31 @@
+{
+    "name": "kanalumaddela/laravel-steam-socialite",
+    "description": "Laravel Socialite Provider using https://github.com/kanalumaddela/laravel-steam-login",
+    "type": "library",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../laravel-steam-login"
+        }
+    ],
+    "require": {
+        "php": "^7.2.5|^8.0",
+        "kanalumaddela/laravel-steam-login": "dev-master",
+        "socialiteproviders/manager": "^3.5|^4.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sam",
+            "email": "git@maddela.org",
+            "homepage": "https://www.maddela.org",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "kanalumaddela\\LaravelSteamLogin\\": "src/"
+        }
+    },
+    "prefer-stable": true
+}
